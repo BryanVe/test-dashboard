@@ -5,13 +5,13 @@ const simulateUsers = () => [
   {
     id: "1",
     firstName: "Gerardo",
-    lastName: "",
+    lastName: "Ojeda",
     avatar: male_avatar,
     email: "gojeda@todova.cl",
     password: "tK9w6?_)%t6",
     phoneNumber: "123456789",
-    region: "Lima",
-    country: "Peru",
+    region: "",
+    country: "Chile",
   },
   {
     id: "2",
