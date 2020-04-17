@@ -11,7 +11,9 @@ import {
 import { makeStyles } from "@material-ui/core/styles";
 import ExitToAppRoundedIcon from "@material-ui/icons/ExitToAppRounded";
 import MenuRoundedIcon from "@material-ui/icons/MenuRounded";
+
 import { StateContext } from "../../../context/StateContext";
+
 const useStyles = makeStyles((theme) => ({
   appBar: {
     zIndex: theme.zIndex.drawer + 1,

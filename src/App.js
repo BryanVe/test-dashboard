@@ -26,7 +26,7 @@ const App = () => {
   if (localStorage.currentUser)
     return (
       <Switch>
-        <Route path="/reload" component={null} key="reload" />
+        <Route path="/reload" component={null} />
         {routes.map(({ path, component }) => {
           if (location.pathname === "/") return <Redirect to="/login" />;
           else

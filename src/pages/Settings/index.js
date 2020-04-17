@@ -1,14 +1,11 @@
 import React from "react";
+
+import { Grid } from "@material-ui/core";
+
 import Layout from "../../layouts/MainLayout";
-import {
-  Grid,
-  Typography,
-  FormGroup,
-  FormControlLabel,
-  Checkbox,
-} from "@material-ui/core";
 import CardSettings from "./components/CardSettings";
 import CustomOutlinedInput from "../../components/CustomOutlinedInput";
+import CheckboxGroup from "./components/CheckboxGroup";
 
 const itemsNotifications = [
   {
@@ -56,28 +53,13 @@ const Settings = () => {
           >
             <Grid container>
               <Grid item xs={12} sm={5}>
-                <Typography variant="subtitle1">Notifications</Typography>
-                <FormGroup>
-                  {itemsNotifications.map(({ label, checked }) => (
-                    <FormControlLabel
-                      label={label}
-                      checked={checked}
-                      control={<Checkbox color="primary" />}
-                    />
-                  ))}
-                </FormGroup>
+                <CheckboxGroup
+                  title="Notifications"
+                  items={itemsNotifications}
+                />
               </Grid>
               <Grid item xs={12} sm={7}>
-                <Typography variant="subtitle1">Messages</Typography>
-                <FormGroup>
-                  {itemsMessages.map(({ label, checked }) => (
-                    <FormControlLabel
-                      label={label}
-                      checked={checked}
-                      control={<Checkbox color="primary" />}
-                    />
-                  ))}
-                </FormGroup>
+                <CheckboxGroup title="Messages" items={itemsMessages} />
               </Grid>
             </Grid>
           </CardSettings>
